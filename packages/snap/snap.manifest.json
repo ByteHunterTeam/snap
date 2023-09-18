@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "description": "Simulate transactions and protect your crypto assets with trading insights.",
+  "proposedName": "ByteHunter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByteHunterTeam/snap"
+  },
+  "source": {
+    "shasum": "m1fD7tHd/+q4JGwqnyYaveSkl2hkwRVSFYxcZ/2B0dc=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/ByteHunter.svg",
+        "packageName": "bytehunter-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "endowment:transaction-insight": {
+      "allowTransactionOrigin": true
+    },
+    "endowment:network-access": {},
+    "snap_notify": {},
+    "snap_manageState": {}
+  },
+  "manifestVersion": "0.1"
+}
