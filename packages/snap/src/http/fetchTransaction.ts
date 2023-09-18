@@ -1,24 +1,11 @@
 import { Json } from '@metamask/snaps-types';
 import {
-  // ErrorType,
   SimulateReq,
-  // SimulationErrorResponse,
-  // SimulationResponse,
   SimulateRes,
 } from '../models/ApiModels';
-// import { SERVER_BASE_URL } from '../utils/environment';
 import { mapChainId } from '../utils/utils';
 import { BASE_URL } from '../consts/consts';
 
-/**
- * Makes a fetch request to the Wallet Guard Simulate API based on the transaction.
- *
- * @param transaction - The transaction to simulate.
- * @param chainId - The chain ID of the transaction.
- * // * @param transactionOrigin - The origin of the transaction.
- * @param transactionOrigin
- * @returns The simulated response from the Wallet Guard Simulate API.
- */
 export const fetchTransaction = async (
   transaction: {
     [key: string]: Json;

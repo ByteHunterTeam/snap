@@ -10,7 +10,6 @@ import {
 import { ContractInfoComponent } from './ContractInfoComponent';
 import { TipComponent } from './TipComponents';
 import {
-  GasComponent,
   ListComponent,
   NoChangesComponent,
   RiskListComponent,
@@ -53,13 +52,9 @@ const handleComponents = (component: ComponentListData): Panel => {
 
 export const GenerateComponent = (
   componentInfo: ComponentListData[] | null,
-  gas?: string,
 ): Panel => {
   if (componentInfo === null || componentInfo.length === 0) {
-    if (!gas) {
-      return NoChangesComponent();
-    }
-    return GasComponent(gas);
+    return NoChangesComponent();
   }
 
   const output: Component[] = [];

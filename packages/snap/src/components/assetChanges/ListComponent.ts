@@ -18,7 +18,11 @@ const getAssetChangeText = (item: ListItem): Text => {
     item.desc = `$${formatFiatValue(item.desc.slice(1), 2)}`;
   }
 
-  if (item.desc.includes('#') || item.desc.includes('$')) {
+  if (item.desc.includes('#')) {
+    return text(`${amount} ${name}(${item.desc})`);
+  }
+
+  if (item.desc.includes('$') && item.desc.slice(1) !== "0") {
     return text(`${amount} ${name}(${item.desc})`);
   }
 

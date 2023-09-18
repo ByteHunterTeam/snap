@@ -1,4 +1,5 @@
-import { Panel, heading, panel, text } from '@metamask/snaps-ui';
+import {Panel, heading, panel, text, Component, divider} from '@metamask/snaps-ui';
+import {GasComponent} from "./GasComponent";
 
 const getRiskText = (riskLevel: number): string => {
   switch (riskLevel) {
@@ -13,6 +14,11 @@ const getRiskText = (riskLevel: number): string => {
   }
 };
 
-export const RiskLevelComponent = (riskLevel: number): Panel => {
-  return panel([heading('风险描述'), text(getRiskText(riskLevel))]);
+export const RiskLevelComponent = (riskLevel: number, gas: string): Panel => {
+  const output: Component[] = [heading('风险描述'), text(getRiskText(riskLevel))];
+  if (gas !== '0' && gas !== '0.00') {
+    output.push(divider())
+    output.push(GasComponent(gas));
+  }
+  return panel(output);
 };
