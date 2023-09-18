@@ -1,4 +1,3 @@
-import { ApprovalNotification } from '../models/approvalsApi';
 import { ChainId } from '../models/chains';
 
 export const numberWithCommas = (x: string): string => {
@@ -11,14 +10,10 @@ export const formatFiatValue = (
 ): string => {
   const fiatWithRoundedDecimals = Number(fiatValue)
     .toFixed(maxDecimals) // round to maxDecimals
-    .replace(/\.00$/u, ''); // removes 00 if it exists
-
-  const fiatWithCommas = numberWithCommas(fiatWithRoundedDecimals); // add commas
+    .replace(/\.00$/u, '');
+  const fiatWithCommas = numberWithCommas(fiatWithRoundedDecimals);
   return `${fiatWithCommas}`;
 };
-
-// generateApprovalsMessage creates the message to be displayed in snap_notify. It ensures
-// that the message must be < 50 characters.
 
 export const mapChainId = (chainId: string): number => {
   switch (chainId) {
