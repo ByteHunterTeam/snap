@@ -1,12 +1,12 @@
 {
   "name": "bytehunter-snap",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Simulate transactions and protect your crypto assets with trading insights.",
+  "version": "0.4.0",
+  "description": "Simulate transactions and protect your crypto assets with transaction insights.",
   "repository": {
     "type": "git",
     "url": "https://github.com/ByteHunterTeam/snap"
   },
+  "homepage": "https://bytehunter.xyz",
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "src/index.ts",
   "files": [

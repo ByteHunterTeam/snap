@@ -1,12 +1,27 @@
-# TypeScript Example Snap
+# ByteHunter Snap
 
-This snap demonstrates how to develop a snap with TypeScript. It is a simple
-snap that displays a confirmation dialog when the `hello` JSON-RPC method is
-called.
+ByteHunter Snap can help parse transactions and analyze their risks. You can intuitively see the assets transferred by the transaction, risk list and other information.
 
-## Testing
+Example:
 
-The snap comes with some basic tests, to demonstrate how to write tests for
-snaps. To test the snap, run `yarn test` in this directory. This will use
-[`@metamask/snaps-jest`](https://github.com/MetaMask/snaps/tree/main/packages/snaps-jest)
-to run the tests in `src/index.test.ts`.
+![example](./images/snap-example.jpg)
+
+## Installation
+
+Snap has been published on [NPM](https://www.npmjs.com/package/bytehunter-snap)
+
+#### Local Usage
+
+1. Install MetaMask Flask https://chrome.google.com/webstore/detail/metamask-flask-developmen/ljfoeinjpaedjfecbmggjgodbgkmjkjk
+2. Setup wallet
+3. Install Snap - Run `yarn start` in the root directory
+4. Follow install process at `http://localhost:8080`
+5. You can go test on any website that can be transaction.
+
+## Contact Us
+
+If you encounter any problems or errors in snap transaction data, Please contact us, thank you!
+
+Discord: https://discord.com/invite/Ds8Jxm95G9
+Email: bytehunter@futurevista.work
+Tech Support: m2364410342@gmail.com

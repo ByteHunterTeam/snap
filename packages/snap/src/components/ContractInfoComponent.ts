@@ -12,12 +12,12 @@ export const ContractInfoComponent = (info: ContractInfo): Panel => {
   const components: Component[] = [];
 
   if (info.name !== '') {
-    components.push(text(`合约名字: ${info.name}`));
+    components.push(text(`Contract Name: ${info.name}`));
   }
 
   if (info.address !== '') {
-    components.push(...[text('合约地址: '), copyable(`${info.address}`)]);
+    components.push(...[text('Contract Address: '), copyable(`${info.address}`)]);
   }
 
-  return panel([heading('交互合约信息'), ...components]);
+  return panel([heading('Contract Information'), ...components]);
 };
