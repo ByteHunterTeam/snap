@@ -6,12 +6,12 @@ const chooseHeader = (tp: number): string => {
     case 1:
     case 2:
     case 5:
-      return '提示';
+      return 'Tip';
     case 3:
     case 4:
-      return '警告';
+      return 'Warning';
     default:
-      return '未知';
+      return 'Unknown';
   }
 };
 

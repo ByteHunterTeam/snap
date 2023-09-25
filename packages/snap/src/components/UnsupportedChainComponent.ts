@@ -2,7 +2,7 @@ import { panel, heading, text, Panel, spinner } from '@metamask/snaps-ui';
 
 export const UnsupportedChainComponent = (): Panel => {
   return panel([
-    heading('暂不支持该链'),
-    text('暂时仅支持ETH,BSC,POLYGON,ARBITRUM, 其他链敬请期待'),
+    heading('UnSupportedChain'),
+    text('Currently only supports ETH, BSC, POLYGON, ARBITRUM. Please stay tuned for other chains.'),
   ]);
 };

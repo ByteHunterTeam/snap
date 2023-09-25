@@ -8,5 +8,5 @@ export const RiskListComponent = (riskList: RiskObj[]): Panel => {
     })
     .map((item) => text(`• ${item.title}`));
 
-  return panel([heading('交易对象风险列表'), ...list]);
+  return panel([heading('Transaction object risk list'), ...list]);
 };

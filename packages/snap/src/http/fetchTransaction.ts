@@ -22,7 +22,7 @@ export const fetchTransaction = async (
       to: transaction.to as string,
       value: transaction.value as string,
       data: transaction.data as string,
-      language: 'zh',
+      language: 'en',
       website: transactionOrigin?.replace('https://', ''),
       source: 'SNAP',
     };

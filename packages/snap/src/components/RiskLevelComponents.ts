@@ -4,18 +4,18 @@ import {GasComponent} from "./GasComponent";
 const getRiskText = (riskLevel: number): string => {
   switch (riskLevel) {
     case 1:
-      return '未检测到风险';
+      return 'No risk detected';
     case 2:
-      return '该交易可能存在风险,请确认后继续';
+      return 'This transaction may be risky, please confirm before continuing.';
     case 3:
-      return '该交易大概率存在风险!请谨慎选择';
+      return 'This transaction is likely to be risky! Please continue carefully';
     default:
-      return '未解析出风险,请确认后继续';
+      return 'Transaction risk analysis failed, please confirm before continuing.';
   }
 };
 
 export const RiskLevelComponent = (riskLevel: number, gas: string): Panel => {
-  const output: Component[] = [heading('风险描述'), text(getRiskText(riskLevel))];
+  const output: Component[] = [heading('Risk description'), text(getRiskText(riskLevel))];
   if (gas !== '0' && gas !== '0.00') {
     output.push(divider())
     output.push(GasComponent(gas));

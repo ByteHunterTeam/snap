@@ -1,13 +1,13 @@
 {
-  "version": "0.1.0",
-  "description": "Simulate transactions and protect your crypto assets with trading insights.",
+  "version": "0.4.0",
+  "description": "Simulate transactions and protect your crypto assets with transaction insights.",
   "proposedName": "ByteHunter",
   "repository": {
     "type": "git",
     "url": "https://github.com/ByteHunterTeam/snap"
   },
   "source": {
-    "shasum": "tN8J2WWMa4Uje4OWCBKcJ+Gdd23OIZ1MUuS9vCwWVPc=",
+    "shasum": "bWiez0hzURg4vgD2pysmwZJR9B2FHYGz7bpKUULl0Qs=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
